@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Categories</h1>
+
+<table class="table table-bordered table-hover mt-2" data-test="checks">
+    <tbody>
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+        </tr>
+
+        {% for cat in categories %}
+        <tr>
+            <td>{{ cat[0] }}</td>
+            <td>{{ cat[1] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+    {% endblock content %}

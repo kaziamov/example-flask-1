@@ -1,0 +1,9 @@
+
+{% block content %}
+
+<form action="/add_new_category" method="post" class="d-flex justify-content-center" required>
+  <input type="text" name="category" placeholder="введите название категории" value="{{ value }}" class="form-control form-control-lg" />
+  <input type="submit" class="btn btn-primary btn-lg ms-3 px-5 text-uppercase mx-3" value="Добавить" />
+</form>
+
+{% endblock content %}
